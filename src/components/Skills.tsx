@@ -40,7 +40,7 @@ const SKILL_CATEGORIES = [
     bgClass: styles.bgPurple,
     skills: [
       { name: "Docker", icon: "https://cdn.simpleicons.org/docker/white" },
-      { name: "AWS", icon: "https://cdn.simpleicons.org/amazonwebservices/white" },
+      { name: "AWS", icon: "https://cdn.simpleicons.org/amazonaws/white" },
       { name: "CI/CD", icon: "https://cdn.simpleicons.org/githubactions/white" },
       { name: "Git", icon: "https://cdn.simpleicons.org/git/white" },
       { name: "Linux", icon: "https://cdn.simpleicons.org/linux/white" },

@@ -35,7 +35,7 @@ const PROJECTS = [
     id: 4,
     title: "SHAMBHOST",
     category: "COLLABORATION",
-    image: "/Profile2.png",
+    image: "/profile.jpg",
     link: "https://shambhost-pearl.vercel.app/"
   }
 ];
