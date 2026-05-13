@@ -43,7 +43,7 @@ export default function Hero() {
         <div className={styles.centerSide}>
           <motion.div style={{ y }} className={styles.imageWrapper}>
             <Image 
-              src="/Profile2.png" 
+              src="/Profile.png" 
               alt="Vency" 
               fill 
               style={{ objectFit: 'cover' }} 
