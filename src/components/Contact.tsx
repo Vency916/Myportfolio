@@ -45,10 +45,10 @@ export default function Contact() {
               <a href="https://github.com/Vency916" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} title="GitHub">
                 <img src="https://cdn.simpleicons.org/github/white" alt="GitHub" width="24" height="24" />
               </a>
-              <a href="https://x.com/vencydev" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} title="Twitter">
+              <a href="https://x.com/victory_vency" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} title="Twitter">
                 <img src="https://cdn.simpleicons.org/x/white" alt="Twitter" width="24" height="24" />
               </a>
-              <a href="https://instagram.com/vencydev" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} title="Instagram">
+              <a href="https://instagram.com/v3vency" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} title="Instagram">
                 <img src="https://cdn.simpleicons.org/instagram/white" alt="Instagram" width="24" height="24" />
               </a>
               <a href="https://wa.me/2347062640049" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} title="WhatsApp">
