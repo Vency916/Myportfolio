@@ -1,0 +1,170 @@
+.contact {
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 10rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 4rem;
+  width: 100%;
+  z-index: 2;
+}
+
+.bio {
+  font-size: 1.8rem;
+  font-weight: 600;
+  max-width: 400px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.column h4 {
+  font-size: 0.75rem;
+  color: #555;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-weight: 700;
+}
+
+.socialRow {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.socialIcon:hover {
+  background: var(--accent);
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.socialIcon img {
+  transition: filter 0.3s;
+}
+
+.socialIcon:hover img {
+  filter: invert(1) brightness(0);
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contactItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contactItem small {
+  font-family: monospace;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+}
+
+.contactItem a {
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.contactItem a:hover {
+  color: var(--accent);
+}
+
+.hugeBranding {
+  position: absolute;
+  bottom: -5rem;
+  left: 0;
+  width: 100%;
+  font-size: clamp(10rem, 30vw, 40rem);
+  font-weight: 900;
+  color: #fff;
+  opacity: 0.03;
+  line-height: 0.8;
+  letter-spacing: -0.05em;
+  text-align: center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bottomBar {
+  padding: 3rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: #444;
+  z-index: 2;
+  margin-top: 5rem;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem 2rem;
+  }
+  .bio {
+    grid-column: span 2;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding-top: 4rem;
+    min-height: auto;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    padding: 0 2rem;
+    gap: 3rem;
+  }
+  .bio {
+    grid-column: span 1;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  .hugeBranding {
+    opacity: 0.08; /* increased visibility */
+    bottom: 2rem;
+    font-size: clamp(5rem, 20vw, 15rem);
+  }
+  .bottomBar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+}

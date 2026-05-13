@@ -1,0 +1,167 @@
+.hero {
+  min-height: 100vh;
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.topNav {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+  z-index: 20;
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.pill:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--accent);
+}
+
+.greenIcon {
+  color: var(--accent);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  flex: 1;
+  position: relative;
+  z-index: 10;
+}
+
+.leftSide {
+  width: 25%;
+}
+
+.roleTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--foreground);
+  line-height: 1.4;
+  border-left: 2px solid var(--accent);
+  padding-left: 1rem;
+}
+
+.centerSide {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.imageWrapper {
+  width: 400px;
+  height: 500px;
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin-bottom: -4rem; /* Overlap with name */
+}
+
+.profileImg {
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.nameContainer {
+  text-align: center;
+  z-index: 20;
+}
+
+.namePrefix {
+  font-size: 1rem;
+  letter-spacing: 0.8em;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.mainName {
+  font-size: 8rem;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0;
+  background: linear-gradient(to bottom, #fff, #444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.05em;
+}
+
+.rightSide {
+  width: 25%;
+}
+
+.introText {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  text-align: right;
+}
+
+.softwareIcons {
+  display: flex;
+  gap: 3rem;
+  margin-top: 4rem;
+  align-items: center;
+}
+
+.softwareIcons img {
+  opacity: 0.5;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.softwareIcons img:hover {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+@media (max-width: 1024px) {
+  .topNav {
+    display: none;
+  }
+  .content {
+    flex-direction: column;
+    text-align: center;
+    gap: 4rem;
+  }
+  .leftSide, .rightSide, .centerSide {
+    width: 100%;
+  }
+  .roleTitle {
+    border: none;
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .introText {
+    text-align: center;
+  }
+  .mainName {
+    font-size: 4rem;
+  }
+  .imageWrapper {
+    width: 300px;
+    height: 400px;
+  }
+}

@@ -1,0 +1,142 @@
+.projectShowcase {
+  min-height: 100vh;
+  background: var(--background);
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  width: 100%;
+}
+
+.header {
+  margin-bottom: 5rem;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.imageWrapper {
+  position: relative;
+  aspect-ratio: 16/10;
+  border-radius: 2rem;
+  overflow: hidden;
+  background: #111;
+  margin-bottom: 2rem;
+}
+
+.projectImage {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card:hover .projectImage {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 255, 136, 0.9); /* var(--accent) with opacity */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.overlay span {
+  color: #000;
+  font-weight: 900;
+  font-family: monospace;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.category {
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.projectTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .container {
+    padding: 0 1.5rem;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .projectTitle {
+    font-size: 1.1rem;
+  }
+}
+
+.cta {
+  margin-top: 6rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 4rem;
+}
+
+.cta p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.whatsappLink {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  background: var(--accent);
+  color: #000;
+  font-weight: 900;
+  font-family: monospace;
+  border-radius: 4rem;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.whatsappLink:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 255, 136, 0.2);
+}
